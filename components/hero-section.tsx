@@ -36,27 +36,23 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Text content */}
           <div className="text-center lg:text-left lg:order-1">
-            {/* Greeting badge */}
             <div className="inline-flex items-center px-4 py-2 mb-6 border border-primary/30 bg-primary/10 rounded-full text-primary text-sm font-medium">
-              {"Tolubishops here"} <span className="ml-1">{"👋"}</span>
+              Tolubishops here <span className="ml-1">👋</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-balance">
-              Building things for the web
+            <h1 className="text-5xl md:text-5xl font-bold tracking-tight mb-6 text-balance">
+              Frontend Engineer building scalable web applications
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl mb-4 text-pretty leading-relaxed mx-auto">
-              Frontend Engineer with{" "}
-              <span className="text-foreground font-medium">
-                4 years of experience
-              </span>{" "}
-              building complex web applications — real-time video conferencing,
-              AI-powered tools, fintech platforms, and e-commerce marketplaces.
+              I build high-performance, production-ready applications with a
+              focus on dashboards, data-heavy interfaces, and complex UI
+              systems.
             </p>
+
             <p className="text-lg text-muted-foreground max-w-xl mb-8 text-pretty leading-relaxed mx-auto">
-              Specialised in{" "}
+              4+ years working with{" "}
               <span className="text-primary font-medium">React</span>,{" "}
               <span className="text-primary font-medium">Next.js</span>, and{" "}
               <span className="text-primary font-medium">TypeScript</span>.{" "}
@@ -75,7 +71,7 @@ export function HeroSection() {
                 href="#contact"
                 className="w-full sm:w-auto px-6 py-3 border border-border rounded-lg font-medium hover:bg-secondary transition-colors text-center"
               >
-                Get in touch
+                Contact me
               </a>
             </div>
 
