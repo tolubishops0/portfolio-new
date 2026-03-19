@@ -33,7 +33,7 @@ export function ContactSection() {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com/toluokunjoyo"
+            href="https://www.linkedin.com/in/tjoyo/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 rounded-full border border-border hover:border-primary hover:text-primary transition-all"

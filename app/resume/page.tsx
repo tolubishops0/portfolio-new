@@ -203,7 +203,7 @@ export default function ResumePage() {
               Github
             </a>
             <a
-              href="https://linkedin.com/in/toluokunjoyo"
+              href="https://www.linkedin.com/in/tjoyo/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-foreground transition-colors"

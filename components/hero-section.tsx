@@ -90,7 +90,7 @@ export function HeroSection() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/toluokunjoyo"
+                href="https://www.linkedin.com/in/tjoyo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
