@@ -37,7 +37,7 @@ export function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
-          href="#"
+          href="/"
           className="text-xl font-bold tracking-tight hover:text-primary transition-colors"
         >
           TB
