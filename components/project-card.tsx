@@ -35,7 +35,7 @@ export function ProjectCard({
       <div
         className={cn(
           "relative overflow-hidden bg-linear-to-br from-primary/20 via-primary/10 to-transparent",
-          featured ? "h-40 md:h-125" : "h-72 md:h-80",
+          featured ? "h-40 md:h-125" : "h-40 md:h-80",
         )}
       >
         {imageUrl ? (

@@ -104,7 +104,7 @@ export function AboutSection() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               I&apos;ve shipped production features across video conferencing
               systems, social media platforms, fintech invoicing tools, and
-              e-commerce marketplaces — independently researching and
+              e-commerce marketplaces, independently researching and
               implementing complex SDKs without heavy oversight.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
