@@ -13,6 +13,7 @@ interface ProjectCardProps {
   liveUrl?: string;
   imageUrl?: string;
   featured?: boolean;
+  url2?: string;
 }
 
 export function ProjectCard({
@@ -23,6 +24,7 @@ export function ProjectCard({
   liveUrl,
   imageUrl,
   featured = false,
+  url2,
 }: ProjectCardProps) {
   return (
     <div
@@ -76,6 +78,17 @@ export function ProjectCard({
             {liveUrl && (
               <a
                 href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                aria-label={`View ${title} live`}
+              >
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
+            {url2 && (
+              <a
+                href={url2}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-muted-foreground hover:text-foreground transition-colors"

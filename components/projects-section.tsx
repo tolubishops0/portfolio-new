@@ -72,6 +72,25 @@ import { ProjectCard } from "./project-card";
 
 const projects = [
   {
+    title: "Ledgr",
+    description:
+      "Built a personal finance management monorepo using Turborepo, containing two Next.js applications — a user-facing dashboard and an admin portal — sharing a component library, types, and utilities across packages. Implemented Supabase for authentication, real-time data, and row-level security. Features include transaction tracking, budget management, analytics with Recharts, and an admin portal for user and platform management.",
+    tags: [
+      "Next.js",
+      "Turborepo",
+      "Supabase",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Recharts",
+    ],
+    githubUrl: "https://github.com/tolubishops0/ledgr",
+    liveUrl: "https://ledgrr-app.vercel.app/login",
+    adminUrl: "https://ledgr-admin.vercel.app/login",
+    imageUrl: "/images/ledgr-user.png",
+    featured: true,
+  },
+  {
     title: "TechPulse",
     description:
       "Built a full-stack tech news platform showcasing multiple Next.js rendering strategies (SSG, SSR, ISR, PPR, CSR) within a single application. Implemented authentication, real-time interactions (likes, comments), and personalized user features including bookmarks and reading history. Structured data fetching and rendering logic to handle different performance and caching strategies across pages.",
@@ -156,6 +175,7 @@ export function ProjectsSection() {
               liveUrl={project.liveUrl}
               imageUrl={project.imageUrl}
               featured={project.featured}
+              url2={project.adminUrl}
             />
           ))}
         </div>
