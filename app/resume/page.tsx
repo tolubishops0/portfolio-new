@@ -6,7 +6,9 @@ import { Button } from "@/components/ui/button";
 const skills = {
   "Core Technologies": [
     "React 18",
+    "React Native",
     "Next.js",
+    "Expo",
     "TypeScript",
     "JavaScript (ES6+)",
     "HTML5",
@@ -28,6 +30,7 @@ const skills = {
     "RESTful APIs",
     "WebRTC",
     "Real-Time Data Exchange",
+    "Supabase",
   ],
   "State Management": [
     "Redux Toolkit",
@@ -49,7 +52,9 @@ const skills = {
     "npm/Node.js",
     "GitHub Copilot",
     "Agile/Scrum",
+    "Turborepo",
   ],
+
   "Performance & Accessibility": [
     "Code-Splitting",
     "Lazy Loading",
@@ -57,7 +62,6 @@ const skills = {
     "WCAG",
     "ARIA",
   ],
-  "Currently Learning": ["React Native", "Expo"],
 };
 
 const experience = [
@@ -111,6 +115,23 @@ const education = [
 ];
 
 const projects = [
+  {
+    name: "Ledgr",
+    description:
+      "Built a personal finance monorepo using Turborepo with two Next.js apps — a user dashboard and an admin portal — sharing a component library, types, and utilities across packages. Implemented Supabase auth with RLS, transaction tracking, budget management, Recharts analytics, and an admin portal for platform-wide user and transaction management.",
+    tech: [
+      "Next.js",
+      "Turborepo",
+      "Supabase",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Recharts",
+    ],
+    github: "github.com/tolubishops0/ledgr",
+    live: "ledgrr-app.vercel.app",
+    adminUrl: "ledgr-admin.vercel.app",
+  },
   {
     name: "TechPulse",
     description:
@@ -169,7 +190,6 @@ export default function ResumePage() {
   return (
     <div className="min-h-screen bg-background py-8 px-4 print:py-0 print:px-0">
       <div className="mx-auto max-w-4xl bg-background print:max-w-none">
-        {/* Print Button */}
         <div className="mb-6 flex justify-end print:hidden">
           <Button onClick={handlePrint} variant="outline" className="gap-2">
             <Printer className="h-4 w-4" />
@@ -177,7 +197,6 @@ export default function ResumePage() {
           </Button>
         </div>
 
-        {/* Header */}
         <header className="mb-8">
           <h1 className="text-3xl font-bold tracking-tight text-foreground">
             Tolu Okunjoyo
@@ -218,7 +237,6 @@ export default function ResumePage() {
           </div>
         </header>
 
-        {/* Summary */}
         <section className="mb-8">
           <h2 className="mb-3 border-b border-border pb-2 text-lg font-semibold text-foreground">
             Summary
@@ -238,7 +256,6 @@ export default function ResumePage() {
           </p>
         </section>
 
-        {/* Technical Skills */}
         <section className="mb-8">
           <h2 className="mb-3 border-b border-border pb-2 text-lg font-semibold text-foreground">
             Technical Skills
@@ -264,7 +281,6 @@ export default function ResumePage() {
           </div>
         </section>
 
-        {/* Experience */}
         <section className="mb-8">
           <h2 className="mb-3 border-b border-border pb-2 text-lg font-semibold text-foreground">
             Experience
@@ -295,7 +311,6 @@ export default function ResumePage() {
           </div>
         </section>
 
-        {/* Projects */}
         <section className="mb-8">
           <h2 className="mb-3 border-b border-border pb-2 text-lg font-semibold text-foreground">
             Projects
@@ -325,6 +340,16 @@ export default function ResumePage() {
                       className="text-xs text-primary hover:underline"
                     >
                       {project.live}
+                    </a>
+                  )}
+                  {project.adminUrl && (
+                    <a
+                      href={`https://${project.adminUrl}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-primary hover:underline"
+                    >
+                      {project.adminUrl}
                     </a>
                   )}
                 </div>
