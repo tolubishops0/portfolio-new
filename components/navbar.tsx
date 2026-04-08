@@ -93,6 +93,7 @@ export function Navbar() {
               href={link.href}
               target={link.name === "Resume" ? "_blank" : undefined}
               rel={link.name === "Resume" ? "noopener noreferrer" : undefined}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={
                 link.name === "Resume"
                   ? "px-4 py-1.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:opacity-90 transition-opacity w-fit"
